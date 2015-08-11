@@ -1,0 +1,28 @@
+#tablaFormularioCargaProducto
+{
+    border:solid 2px black;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+#tablaFormularioCargaProducto tr
+{
+    //width: 100%;
+}
+.inputsFormularioCargaProducto
+{
+    width: 100%;
+    padding:12px;
+    font-size: 24px;
+}
+.formularioCargaProductoColumnaUNO
+{
+    width: 25%;
+    border:solid 2px black;
+}
+.formularioCargaProductoColumnaDOS
+{
+    width: 75%;
+    border:solid 2px black;
+    overflow: hidden;
+}

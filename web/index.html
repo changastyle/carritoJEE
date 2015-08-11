@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carrito</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="frontend/css/index.css">
+        <link rel="stylesheet" href="frontend/css/columnas.css">
+        <link rel="stylesheet" href="frontend/css/columnaProductos.css">
+        <link rel="stylesheet" href="frontend/css/formularioCargaProducto.css">
+        <link rel="stylesheet" href="frontend/css/HeaderProductoPuntual.css">
+        <script src="frontend/js/jquery.js"></script>
+        <script src="frontend/js/index.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <h2>Carrito</h2>
+        </div>
+        <div id="carrito">
+            
+        </div>
+        <div id="contenedorPrincipal">
+            
+            <div class="columnas" id="columnaProductos">
+                
+                <div class="headersColumnas" id="headerColumnaProductos">
+                    <input type="text" id="barraBusquedaProductos" onfocus="buscarProductos(this)" onkeyup="buscarProductos(this)" onkeypress="buscarProductos(this)">
+                    <button class="botones" id="botonBusquedaProductos">Buscar</button>
+                </div>
+                <div class="bodyColumnas" id="bodyColumnaProductos">
+                </div>
+            </div>
+            <div class="columnas" id="columnaMedio">
+                <div class="headersColumnas" id="headerColumnaMedio">Seleccionar un Producto:</div>
+                <div class="bodyColumnas" id="bodyColumnaMedio"></div>
+            </div>
+            <div class="columnas" id="columnaDerecha">
+                <div class="headersColumnas" id="headerColumnaDerecha">Carga de Nvo Producto:</div>
+                <div class="bodyColumnas" id="bodyColumnaDerecha">asdf</div>
+            </div>
+        </div>
+    </body>
+</html>

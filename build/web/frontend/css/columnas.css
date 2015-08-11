@@ -1,0 +1,33 @@
+.columnas
+{
+    width: 30%;
+    height: 100%;
+    background-color:burlywood;
+    display: inline-block;
+    position:absolute;
+}
+.headersColumnas
+{
+    height: 50px;
+    //border:solid 2px black;
+    box-sizing: border-box;
+}
+.bodyColumnas
+{
+    border:solid 2px black;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+}
+
+#columnaProductos
+{
+    left:0px;
+}
+#columnaMedio
+{
+    left:30%;
+}
+#columnaDerecha
+{
+    right: 0px;
+}

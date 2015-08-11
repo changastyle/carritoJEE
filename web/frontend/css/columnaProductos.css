@@ -1,0 +1,48 @@
+#barraBusquedaProductos
+{
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#botonBusquedaProductos
+{
+    width: 20%;
+    height: 100%;
+    float:right;
+}
+#listaProductos
+{
+    background-color:#3D3D3D;
+    width: 100%;
+    margin:0px;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    z-index: 3;
+    overflow-y: scroll;
+    padding:0px;
+}
+.itemsListas
+{
+    border:solid 2px black;
+    border-radius: 5px;
+    list-style-type: none;
+    margin:5px;
+    padding:12px;
+    text-align: center;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febf01+0,febf01+100;Yellow+Flat */
+background: #febf01; /* Old browsers */
+background: -moz-linear-gradient(top,  #febf01 0%, #febf01 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febf01), color-stop(100%,#febf01)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #febf01 0%,#febf01 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #febf01 0%,#febf01 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #febf01 0%,#febf01 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #febf01 0%,#febf01 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf01', endColorstr='#febf01',GradientType=0 ); /* IE6-9 */
+
+    
+}
+.itemsListas:hover
+{
+    box-shadow: inset -10px -10px 25px orange;
+}
