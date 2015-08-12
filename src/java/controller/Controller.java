@@ -12,9 +12,26 @@ public class Controller
     {
         productosDelCarrito.add(producto);
     }
-    public static void sacarProductoDelCarrito(Producto producto)
+    public static boolean sacarProductoDelCarrito(int IDProducto)
     {
-        productosDelCarrito.remove(producto);
+        boolean eliminado = false;
+        if(productosDelCarrito.size() > 0)
+        {
+            for(Producto p : productosDelCarrito)
+            {
+                if(p.getId() == IDProducto)
+                {
+                    if(eliminado != true)
+                    {
+                        productosDelCarrito.remove(p);
+                        eliminado = true;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        return eliminado;
     }
     public static ArrayList<Producto> getProductosDelCarrito()
     {

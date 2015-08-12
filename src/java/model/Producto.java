@@ -1,5 +1,5 @@
 package model;
-// Generated 10/08/2015 17:18:15 by Hibernate Tools 4.3.1
+// Generated 11/08/2015 19:44:16 by Hibernate Tools 4.3.1
 
 
 
@@ -12,13 +12,15 @@ public class Producto  implements java.io.Serializable {
      private Integer id;
      private String nombre;
      private float precio;
+     private String imagen;
 
     public Producto() {
     }
 
-    public Producto(String nombre, float precio) {
+    public Producto(String nombre, float precio, String imagen) {
        this.nombre = nombre;
        this.precio = precio;
+       this.imagen = imagen;
     }
    
     public Integer getId() {
@@ -41,6 +43,13 @@ public class Producto  implements java.io.Serializable {
     
     public void setPrecio(float precio) {
         this.precio = precio;
+    }
+    public String getImagen() {
+        return this.imagen;
+    }
+    
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
 

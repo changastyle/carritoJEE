@@ -5,8 +5,12 @@
         <group>
             <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/index.html</file>
             <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/frontend/js/index.js</file>
-            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/frontend/css/columnaProductos.css</file>
-            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/backend/productos/buscarProductos.jsp</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/src/java/controller/Controller.java</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/backend/productos/carrito.jsp</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/src/java/model/Producto.java</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/frontend/formularios/formularioCargaProducto.jsp</file>
+            <file>file:/C:/Users/NICOLAS/Documents/NetBeansProjects/carrito/carrito/web/backend/productos/altaProducto.jsp</file>
         </group>
     </open-files>
 </project-private>

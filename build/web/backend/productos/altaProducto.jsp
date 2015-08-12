@@ -2,8 +2,9 @@
 <%
 String nombreProducto = request.getParameter("nombreProducto");
 int precio = Integer.parseInt(request.getParameter("precioProducto"));
+String imagenProducto = request.getParameter("imagenProducto");
 
-Producto producto = new Producto(nombreProducto, precio);
+Producto producto = new Producto(nombreProducto, precio, imagenProducto);
 
 
 if(controller.Controller.insertarProducto(producto))

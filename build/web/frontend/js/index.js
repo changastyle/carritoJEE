@@ -38,15 +38,34 @@ function agregarProductoAlCarro()
 function llenarCarritoFrontend()
 {
     $.ajax
-    ({url: "backend/productos/getProductosDelCarrito.jsp"}).done(function(result)
+    ({url: "backend/productos/carrito.jsp"}).done(function(result)
     {
        $("#carrito").html(result);
-       $("#carrito").append("<img id='cruzCierreCarrito' src='frontend/img/cruz.png' onclick='minimizarCarrito()'>");
     });
 }
 function minimizarCarrito()
 {
     $("#carrito").hide("slow");
+}
+function quitarProducto(idProducto)
+{
+    console.log("Voy a quitar: " + idProducto);
+
+    
+    $.ajax( {url: "backend/productos/quitarProductoAlCarrito.jsp", data: {"idProducto": idProducto},beforeSend: function (xhr) 
+        {
+            $("#carrito").html("<img src='frontend/img/cargando.gif'>");
+        }, success: function (data, textStatus, jqXHR) 
+        {
+            console.log("eliminado:" + data.trim());
+            $.ajax
+            ({url: "backend/productos/carrito.jsp"}).done(function(result)
+            {
+               $("#carrito").html(result);
+            });
+        }
+    });
+    
 }
 $(document).ready(function()
 {
